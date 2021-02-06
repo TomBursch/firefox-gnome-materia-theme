@@ -26,8 +26,8 @@
 }
 
 tab > stack {
-	height: 38px !important;
-	min-height: 38px !important;
+	height: 32px !important;
+	min-height: 32px !important;
 }
 /* Extra margin for the first and last tabs */
 .tabbrowser-tab[first-tab]:not([pinned=true]) {
@@ -69,7 +69,7 @@ tab > stack {
 
 /* Space between tabs */
 .tabbrowser-tab:not([pinned=true]) {
-	margin: 0 4px !important;
+	margin: 0 !important;
 }
 
 /* Tab labels */
@@ -167,7 +167,7 @@ tab[selected]:-moz-window-inactive {
 	-moz-appearance: none !important;
 	border: 1px solid transparent;
 	box-sizing: content-box; /* Avoid deformation on flexbox */
-	border-radius: 5px;
+	border-radius: 100%;
 	list-style-image: url("../icons/window-close-symbolic.svg") !important;
 	fill: var(--gnome-toolbar-color) !important;
 	fill-opacity: 1 !important;
@@ -216,7 +216,7 @@ tab[selected]:-moz-window-inactive {
 	background-image: none !important;
 	border: 0 !important;
 	border-image: none !important;
-	border-bottom: 4px solid var(--gnome-tabbar-tab-active-border-bottom-color) !important;
+	border-bottom: 2px solid var(--gnome-tabbar-tab-active-border-bottom-color) !important;
 }
 .tab-background[selected=true]:-moz-window-inactive {
 	background-color: var(--gnome-inactive-tabbar-tab-active-background) !important;
@@ -235,7 +235,7 @@ tab[selected]:-moz-window-inactive {
 :root:not(:-moz-window-inactive) .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
 	background-color: var(--gnome-tabbar-tab-hover-background) !important;
 	border-image: none !important;
-	border-bottom: 4px solid var(--gnome-tabbar-tab-hover-border-bottom-color) !important;
+	border-bottom: 2px solid var(--gnome-tabbar-tab-hover-border-bottom-color) !important;
 }
 
 /* Tabs scroll buttons hover */
@@ -276,7 +276,7 @@ tab[selected]:-moz-window-inactive {
 	background-repeat: no-repeat;
 	background-position: center center;
 	min-width: 10px;
-	height: 10px;
+	height: 8px;
 	margin-right: 5px;
 	margin-left: auto !important;
 	border-radius: 100%;

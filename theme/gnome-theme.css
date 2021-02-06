@@ -9,8 +9,8 @@
 @import "parts/popups.css";
 @import "parts/remove-white-flash.css";
 @import "parts/icons.css";
-@import "colors/light.css";
-@import "colors/dark.css";
+@import "colors/light-materia.css";
+@import "colors/dark-materia.css";
 @import "system-icons.css";
 @import "symbolic-tab-icons.css";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";

@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16.023" height="16">
-    <g fill="context-fill" stroke="context-stroke" fill-opacity="context-fill-opacity" stroke-opacity="context-stroke-opacity">
-        <path d="M3.008 4.986A1 1 0 0 0 2.023 6v7a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 1 0-2 0v6h-8V6a1 1 0 0 0-1.015-1.014z" style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal" color="#000" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
-        <path d="M8.031 1a1 1 0 0 0-.601.186l-7 5a1.001 1.001 0 1 0 1.164 1.628L8.012 3.23l6.418 4.585a1.001 1.001 0 1 0 1.164-1.628l-7-5A1 1 0 0 0 8.03 1z" style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal" color="#000" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"/>
-        <path d="M6.012 8.01h3.03V13h-3.03z" style="marker:none" color="#bebebe" overflow="visible"/>
-        <path d="M15.012 7h1v1h-1zM.012 7h1v1h-1z"/>
-    </g>
+<svg width="16" height="16" version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style id="current-color-scheme" type="text/css">.ColorScheme-Text { color:context-fill; } .ColorScheme-Highlight { color:#5294e2; }</style>
+ </defs>
+ <path style="fill:currentColor" class="ColorScheme-Text" d="m8.5 1.4141c-0.25562 0-0.51116 0.0971-0.70703 0.29297l-5.6562 5.6562c-0.39174 0.39174-0.39174 1.0223 0 1.4141 0.23669 0.23669 0.55752 0.313 0.86328 0.26367v4.959h2v-6.6719l3.5-3.5 3.5 3.5v6.6719h2v-4.959c0.30576 0.04933 0.62659-0.026981 0.86328-0.26367 0.39174-0.39174 0.39174-1.0223 0-1.4141l-5.6562-5.6562c-0.19587-0.19587-0.45141-0.29297-0.70703-0.29297zm0 7.5859c-0.831 0-1.5 0.669-1.5 1.5v2 1.5h3v-3-0.5c0-0.831-0.669-1.5-1.5-1.5z"/>
 </svg>

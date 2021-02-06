@@ -44,7 +44,7 @@ tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button'] {
 	box-shadow: var(--gnome-button-box-shadow) !important;
 	border: 1px solid var(--gnome-button-border-color) !important;
 	border-bottom-color: var(--gnome-button-border-accent-color) !important;
-	border-radius: 5px !important;
+	border-radius: 100% !important;
 	padding: 0 2px !important;
 	height: 34px !important;
 	max-height: 34px !important;
@@ -85,6 +85,7 @@ tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button'] {
 tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button'] {
 	padding: 2px 16px !important;
 	text-align: center !important;
+	border-radius: 5px !important;
 }
 .subviewbutton.panel-subview-footer label {
 	text-align: center !important;
@@ -225,7 +226,7 @@ tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button']:active {
 	background: transparent !important;
 	box-shadow: none !important;
 	border-color: transparent !important;
-	border-radius: 5px !important;
+	border-radius: 100% !important;
 }
 .subviewbutton-back:not(#hack):not(:active):hover,
 .close-icon:not(.tab-close-button):not(:active):hover,
@@ -243,8 +244,8 @@ tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button']:active {
 }
 
 /* Combined buttons */
-#nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#hack),
-#nav-bar #back-button:not(#hack),
+/* #nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#hack),
+#nav-bar #back-button:not(#hack), */
 .subviewbutton.panel-subview-footer:not(:only-of-type):not(:last-of-type),
 .panel-footer button:not(:only-of-type):not(:last-of-type),
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
@@ -257,8 +258,8 @@ tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button']:active {
 	margin-right: 0 !important;
 }
 
-#nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#hack),
-#nav-bar #forward-button:not(#hack),
+/* #nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#hack),
+#nav-bar #forward-button:not(#hack), */
 .subviewbutton.panel-subview-footer:not(:only-of-type):not(:first-of-type),
 .panel-footer button:not(:only-of-type):not(:first-of-type),
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#appMenu-fullscreen-button),

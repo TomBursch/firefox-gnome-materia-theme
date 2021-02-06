@@ -1,14 +1,13 @@
 <h1 align="center">
 	<img src="icon.svg" alt="Firefox GNOME theme" width="100" height="100"/><br>
- Firefox GNOME theme
+ Firefox GNOME materia theme
 </h1>
 
-[![GitHub](https://img.shields.io/github/license/rafaelmardojai/firefox-gnome-theme.svg)](https://github.com/rafaelmardojai/firefox-gnome-theme/blob/master/LICENSE)
-[![Donate](https://img.shields.io/badge/PayPal-Donate-gray.svg?style=flat&logo=paypal&colorA=0071bb&logoColor=fff)](https://paypal.me/RafaelMardojaiCM)
+[![GitHub](https://img.shields.io/github/license/TomBursch/firefox-gnome-materia-theme.svg)](https://github.com/TomBursch/firefox-gnome-materia-theme/blob/master/LICENSE)
 
-<p align="center"><strong>A GNOME theme for Firefox</strong></p>
+<p align="center"><strong>A GNOME materia theme for Firefox</strong></p>
 
-<p align="center">This theme follows lastest GNOME Adwaita style.</p>
+This theme follows the lastest material design scheme and works with the [materia](https://github.com/nana-4/materia-theme) theme. Forked from [Firefox GNOME theme](https://github.com/rafaelmardojai/firefox-gnome-theme).
 
 ![Screenshot of the theme](screenshot.png)
 
@@ -22,6 +21,9 @@ This theme is supposed to work with current supported Firefox releases:
 - Firefox 78 ESR
 - Firefox 84 Beta
 - Firefox 85 Nightly
+
+## Todo
+- Light mode needs some color adjustments
 
 ## Installation
 
@@ -47,16 +49,9 @@ This theme is supposed to work with current supported Firefox releases:
 	- Default: standard default profile
 - `-t <theme_name>` *optional*
 	- Set the colors used in the theme.
-	- Default: Adwaita.
-	- Options: `adwaita`, `maia`, `yaru`.
+	- Default: materia.
+	- Options: `materia`, `adwaita`, `maia`, `yaru`.
 	
-### One command curled script
-
-You can also install this theme with one command:
-
-`curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash`
-
-It will download the latest version of the theme and run the installation script for you.
 
 ### Manual installation
 1. Go to `about:support` in Firefox.
@@ -203,7 +198,5 @@ Feel free to use any parts of my code to develop your own themes, I don't force
 any specific license on your code.
 
 ## Credits
-Developed by **[Rafael Mardojai CM](https://github.com/rafaelmardojai)** and [contributors](https://github.com/rafaelmardojai/firefox-gnome-theme/graphs/contributors). Based on **[Sai Kurogetsu](https://github.com/kurogetsusai/firefox-gnome-theme)** original work.
-
-## Donate
-If you want to support development, consider donating via [PayPal](https://paypal.me/RafaelMardojaiCM). Also consider donating upstream, [Firefox](https://donate.mozilla.org/) & [GNOME](https://www.gnome.org/support-gnome/).
+Developed by **[Tom Bursch](https://github.com/tombursch)**. Based on **[Rafael Mardojai CM](https://github.com/rafaelmardojai/firefox-gnome-theme)** original work.
+Icons by **[Papirus Development Team](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)**

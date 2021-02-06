@@ -49,7 +49,7 @@ function saveProfile(){
 	sed -i '1s/^/@import "firefox-gnome-theme\/userChrome.css";\n/' userChrome.css
 
 	if [ $THEME = "DEFAULT" ]; then
-		echo "No theme set, using default adwaita."
+		echo "No theme set, using default materia."
 	else
 		echo "Setting $THEME theme."
 		echo "@import \"firefox-gnome-theme\/theme/colors/light-$THEME.css\";" >> userChrome.css
