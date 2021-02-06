@@ -113,6 +113,14 @@ git pull origin master
 ## Scrollbars
 To achieve Firefox with overlay scrollbars install [firefox-gnome-scrollbars](https://github.com/rafaelmardojai/firefox-gnome-scrollbars).
 
+## HTML input theming
+HTML inputs (e.g. [boolean inputs](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_input_checked)) use the default system theme. To override this behaviour change the following setting.
+
+1. Go to the `about:config` page 
+2. Type in `widget.content.gtk-theme-override`
+3. Set it to `Materia`
+4. Restart Firefox
+
 ## Enabling optional features
 Optional features can be enabled by crating new `boolean` preferences in `about:config`.
 
