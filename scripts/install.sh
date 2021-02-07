@@ -39,28 +39,28 @@ function saveProfile(){
 	# Create single-line user CSS files if non-existent or empty.
 	if [ -s userChrome.css ]; then
 		# Remove older theme imports
-		sed 's/@import "firefox-gnome-theme.*.//g' userChrome.css | sed '/^\s*$/d' > userChrome.css
+		sed 's/@import "firefox-gnome-materia-theme.*.//g' userChrome.css | sed '/^\s*$/d' > userChrome.css
 		echo >> userChrome.css
 	else
 		echo >> userChrome.css
 	fi
 
 	# Import this theme at the beginning of the CSS files.
-	sed -i '1s/^/@import "firefox-gnome-theme\/userChrome.css";\n/' userChrome.css
+	sed -i '1s/^/@import "firefox-gnome-materia-theme\/userChrome.css";\n/' userChrome.css
 
 	if [ $THEME = "DEFAULT" ]; then
 		echo "No theme set, using default materia."
 	else
 		echo "Setting $THEME theme."
-		echo "@import \"firefox-gnome-theme\/theme/colors/light-$THEME.css\";" >> userChrome.css
-		echo "@import \"firefox-gnome-theme\/theme/colors/dark-$THEME.css\";" >> userChrome.css
+		echo "@import \"firefox-gnome-materia-theme\/theme/colors/light-$THEME.css\";" >> userChrome.css
+		echo "@import \"firefox-gnome-materia-theme\/theme/colors/dark-$THEME.css\";" >> userChrome.css
 	fi
 
 	cd ..
 
 	# Symlink user.js to firefox-gnome-theme one.
 	echo "Set configuration user.js file"
-	ln -fs chrome/firefox-gnome-theme/configuration/user.js user.js
+	ln -fs chrome/firefox-gnome-materia-theme/configuration/user.js user.js
 
 	echo "Done."
 	cd ..
