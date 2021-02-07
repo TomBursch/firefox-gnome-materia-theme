@@ -284,7 +284,7 @@ menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 }
 /* Bookmarks menu button */
 #bookmarks-menu-button {
-	list-style-image: url("../icons/starred-symbolic.svg") !important;
+	list-style-image: url("../icons/ephy-bookmarks-symbolic.svg") !important;
 }
 /* History button */
 #history-panelmenu {

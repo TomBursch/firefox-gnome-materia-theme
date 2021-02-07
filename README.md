@@ -104,7 +104,7 @@ Both manual and script installation methods should create a git clone in `your-p
 git pull origin master
 ```
 
-> Note: You can also run the installation script again to update (after cloning again the repo).
+> Note: You can also run the installation script again to update (after cloning/pulling the repo).
 
 ## Uninstalling
 1. Go to your profile folder. (Go to `about:support` in Firefox > Application Basics > Profile Directory > Open Directory)
@@ -147,7 +147,7 @@ Optional features can be enabled by crating new `boolean` preferences in `about:
 
 - **System icons** `gnomeTheme.systemIcons`
 
-	Use system theme icons instead of Adwaita icons included by theme.
+	Use system theme icons instead of Papirus icons included by the theme.
 
 	> **Note:** This feature has a [known color bug](#icons-color-broken-with-system-icons).
 
