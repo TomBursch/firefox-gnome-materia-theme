@@ -23,7 +23,7 @@ This theme is supposed to work with current supported Firefox releases:
 - Firefox 85 Nightly
 
 ## Todo
-- Light mode needs some color adjustments
+- Light mode needs some work.
 
 ## Installation
 
