@@ -17,10 +17,10 @@ This is a bunch of CSS code to make Firefox look closer to GNOME's native apps.
 
 This theme is supposed to work with current supported Firefox releases:
 
-- Firefox 83
+- Firefox 85
 - Firefox 78 ESR
-- Firefox 84 Beta
-- Firefox 85 Nightly
+- Firefox 86 Beta
+- Firefox 87 Nightly
 
 ## Todo
 - Light mode needs some work.
@@ -122,7 +122,7 @@ HTML inputs (e.g. [boolean inputs](https://www.w3schools.com/tags/tryit.asp?file
 4. Restart Firefox
 
 ## Enabling optional features
-Optional features can be enabled by crating new `boolean` preferences in `about:config`.
+Optional features can be enabled by creating new `boolean` preferences in `about:config`.
 
 1. Go to the `about:config` page 
 2. Type the key of the feature you want to enable

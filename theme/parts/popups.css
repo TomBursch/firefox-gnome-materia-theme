@@ -54,7 +54,7 @@ panelview {
 }
 
 .panel-arrowcontent {
-	background: var(--gnome-popover-background) !important;
+	background: var(--arrowpanel-background) !important;
 	border: 1px solid !important;
 	border-color: var(--gnome-popover-border-color) !important;
 	border-radius: 9px;
@@ -62,8 +62,11 @@ panelview {
 	color: var(--gnome-toolbar-color) !important;
 }
 .panel-arrow {    
-	fill: var(--gnome-popover-background) !important;
+	fill: var(--arrowpanel-background) !important;
 	stroke: var(--gnome-popover-border-color) !important;
+}
+panel:not([remote]), #BMB_bookmarksPopup {
+	--arrowpanel-background: var(--gnome-popover-background) !important;
 }
 
 .PanelUI-subView toolbarseparator:not([orient="vertical"]) {
@@ -207,4 +210,13 @@ tabmodalprompt[role="dialog"] button.tabmodalprompt-button1:not([hidden]) ~ butt
 tabmodalprompt[role="dialog"] button.tabmodalprompt-button1:not(#hack) {
 	border-left: 0 !important;
 	border-radius: 0 0 0 9px !important;
+}
+
+/* Main menu fxa */
+#appMenu-fxa-status[fxastatus="signedin"] > #appMenu-fxa-label {
+	padding-left: 22px !important;
+	margin-inline-start: -22px !important;
+}
+#appMenu-fxa-status[fxastatus="signedin"] > #appMenu-fxa-avatar {
+	margin-inline-start: 5px !important;
 }

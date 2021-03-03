@@ -57,7 +57,9 @@ tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button'] {
 
 /* Buttons with margins */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton),
-.notification-button {
+.notification-button,
+.subviewbutton.panel-subview-footer:not(:only-of-type),
+.panel-footer button:not(:only-of-type) {
 	margin: 0 3px !important;
 }
 #TabsToolbar .toolbarbutton-1 {
@@ -244,8 +246,8 @@ tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button']:active {
 }
 
 /* Combined buttons */
-/* #nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#hack),
-#nav-bar #back-button:not(#hack), */
+#nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#hack),
+#nav-bar #back-button:not(#hack),
 .subviewbutton.panel-subview-footer:not(:only-of-type):not(:last-of-type),
 .panel-footer button:not(:only-of-type):not(:last-of-type),
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
@@ -258,8 +260,8 @@ tabmodalprompt[role="dialog"] button[class*='tabmodalprompt-button']:active {
 	margin-right: 0 !important;
 }
 
-/* #nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#hack),
-#nav-bar #forward-button:not(#hack), */
+#nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#hack),
+#nav-bar #forward-button:not(#hack),
 .subviewbutton.panel-subview-footer:not(:only-of-type):not(:first-of-type),
 .panel-footer button:not(:only-of-type):not(:first-of-type),
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#appMenu-fullscreen-button),
