@@ -17,10 +17,10 @@ This is a bunch of CSS code to make Firefox look closer to GNOME's native apps.
 
 This theme is supposed to work with current supported Firefox releases:
 
-- Firefox 85
-- Firefox 78 ESR
-- Firefox 86 Beta
-- Firefox 87 Nightly
+- Firefox 89
+- Firefox 78 ESR *(Recommended to use the `v78.1` git tag)*
+- Firefox 90 Beta *(Recommended to use the `beta` git branch)*
+- Firefox 91 Nightly
 
 ## Todo
 - Light mode needs some work.
@@ -29,20 +29,34 @@ This theme is supposed to work with current supported Firefox releases:
 
 ### Installation script
 1. Clone this repo and enter folder:
+	
 	```sh
-	git clone https://github.com/rafaelmardojai/firefox-gnome-theme/ && cd firefox-gnome-theme
+	git clone https://github.com/rafaelmardojai/firefox-gnome-theme && cd firefox-gnome-theme
+	```
+2. Checkout a git branch or tag if needed, otherwise use `master` and ignore this step. 
+	```sh
+	git checkout beta # Set beta branch 
+	git checkout v78.1 # Set v78.1 tag 
 	```
 
-2. Run installation script:
+3. Run installation script
+
+	#### Auto install script
+	
+	This script will lookup Firefox profiles location and enable a theme variant for your GTK theme if it exists.
+	```sh
+	./scripts/auto-install.sh
+	```
+	#### Install script
 	```sh
 	./scripts/install.sh # Standard
 	./scripts/install.sh -f ~/.var/app/org.mozilla.firefox/.mozilla/firefox # Flatpak
 	```
 
-#### Script options
-- `-f <firefox_folder_path>` *optional*
-	- Set custom Firefox folder path, for example `~/.mozilla/icecat/`.
-	- Default: `~/.mozilla/firefox/`
+	##### Script options
+	- `-f <firefox_folder_path>` *optional*
+		- Set custom Firefox folder path, for example `~/.mozilla/icecat/`.
+		- Default: `~/.mozilla/firefox/`
 
 - `-p <profile_name>` *optional*
 	- Set custom profile name, for example `e0j6yb0p.default-nightly`.
@@ -52,6 +66,12 @@ This theme is supposed to work with current supported Firefox releases:
 	- Default: materia.
 	- Options: `materia`, `adwaita`, `maia`, `yaru`.
 	
+
+You can also install this theme with one command:
+
+`curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash`
+
+It will download the latest version of the theme and run the installation script for you.
 
 ### Manual installation
 1. Go to `about:support` in Firefox.
@@ -88,7 +108,8 @@ This theme is supposed to work with current supported Firefox releases:
 8. Symlink preferences file:
 
 	```sh
-	ln -s chrome/firefox-gnome-theme/configuration/user.js ../user.js
+	cd .. # Go back to the profile directory
+	ln -fs chrome/firefox-gnome-theme/configuration/user.js user.js
 	```
 
 9. Restart Firefox.
@@ -96,6 +117,21 @@ This theme is supposed to work with current supported Firefox releases:
 10. Open Firefox customization panel and move the new tab button to headerbar.
 
 11. Be happy with your new gnomish Firefox.
+
+### Required Firefox preferences
+We provide a **user.js** configuration file in `configuration/user.js` that enable some preferences required by this theme to work. 
+
+You should already have this file installed if you followed one of the installation methods, but in any case be sure this preferences are enabled under `about:config`:
+
+- `toolkit.legacyUserProfileCustomizations.stylesheets`
+
+	This preference is required to load the custom CSS in Firefox, otherwise the theme wouldn't work.
+
+- `svg.context-properties.content.enabled`
+
+	This preference is required to recolor the icons, otherwise you will get black icons everywhere.
+
+> For other non essential preferences checkout `configuration/user.js`.
 
 ## Updating
 Both manual and script installation methods should create a git clone in `your-profile-folder-path/chrome/firefox-gnome-theme`, so the easiet way to update the theme is to open this folder in terminal and perform a git pull.
@@ -137,6 +173,14 @@ Optional features can be enabled by creating new `boolean` preferences in `about
 
 	> **Note:** You should move the new tab button somewhere else for this to work, because by default it is on the tab bar too. See [#54](https://github.com/rafaelmardojai/firefox-gnome-theme/issues/54).
 
+- **Spinner** `gnomeTheme.spinner`
+
+	Use the GNOME spinner for tabs loading.
+
+	> **Note:** This is optional because Firefox has issues rendering the spinner SVG:
+	>
+	> <img src="theme/icons/process-working-symbolic.svg" alt="GTK Spinner" width="50"/>
+
 - **Normal width tabs** `gnomeTheme.normalWidthTabs`
 
 	Use normal width tabs as default Firefox.
@@ -154,6 +198,10 @@ Optional features can be enabled by creating new `boolean` preferences in `about
 - **Symbolic tab icons** `gnomeTheme.symbolicTabIcons`
 
 	Make all tab icons look kinda like symbolic icons.
+
+- **Hide WebRTC indicator** `gnomeTheme.hideWebrtcIndicator`
+
+	Hide redundant WebRTC indicator since GNOME provides their own privacy icons in the top right.
 
 - **Drag window from headerbar buttons** `gnomeTheme.dragWindowHeaderbarButtons`
 
